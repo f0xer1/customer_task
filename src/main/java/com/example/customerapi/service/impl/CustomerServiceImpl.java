@@ -8,10 +8,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
-
 import java.time.Instant;
 import java.util.List;
-
 import java.util.Optional;
 
 @Service
@@ -39,7 +37,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Transactional(isolation = Isolation.REPEATABLE_READ)
     public Customer update(Customer customer) {
         customer.setUpdated(Instant.now().getEpochSecond());
-        return repository.save(customer);
+        return customer;
     }
 
     @Override

@@ -1,7 +1,6 @@
 package com.example.customerapi.service;
 
 import com.example.customerapi.model.Customer;
-import com.example.customerapi.web.dto.CustomerUpdateDto;
 
 import java.util.List;
 import java.util.Optional;
