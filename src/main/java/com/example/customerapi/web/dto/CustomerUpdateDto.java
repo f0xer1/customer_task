@@ -3,9 +3,11 @@ package com.example.customerapi.web.dto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
+@AllArgsConstructor
 public class CustomerUpdateDto {
 
     @NotBlank(message = "Specify full name")

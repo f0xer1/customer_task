@@ -4,9 +4,11 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
+@AllArgsConstructor
 public class CustomerCreationDto {
     @NotBlank(message = "Specify full name")
     @Size(min = 2, max = 50, message = "Full name should be between 2 and 50 characters, including whitespaces")
