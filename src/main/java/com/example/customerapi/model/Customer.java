@@ -2,7 +2,6 @@ package com.example.customerapi.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import java.time.Instant;
@@ -10,7 +9,6 @@ import java.time.Instant;
 @Entity
 @Getter
 @Setter
-@RequiredArgsConstructor
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
